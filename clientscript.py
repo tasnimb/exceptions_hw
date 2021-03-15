@@ -14,7 +14,7 @@ print(first_account.get_accountholder)
 
 
 lisa_account=Saving_Account("Lisa","Simpson",300)
-
+print(lisa_account.get_balance())
 
 try:
     lisa_account.withdraw(1000)

@@ -12,6 +12,8 @@ class Saving_Account(Account):
         self._balance += amount
 
         return
+    def get_balance(self):
+        return self._balance
 
     # def add_interest(self):
 
