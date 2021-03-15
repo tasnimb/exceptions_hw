@@ -10,7 +10,6 @@ class Saving_Account(Account):
 
     def deposit(self, amount):
         self._balance += amount
-
         return
     def get_balance(self):
         return self._balance
