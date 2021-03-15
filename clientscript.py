@@ -1,20 +1,20 @@
 from exception_handling import InsufficientFundsException
 from account import Account
-from savingsacc import Saving_Account
+from savingsacc import Savings_Account
 
 first_account=Account("Tasnim", "Begum", 900)
 
 #setters
-first_account.get_accountholder= "balh,Mbuthuma"
+first_account.get_accountholder = "Sanele , Mbuthuma"
 
-first_account.get_accountholder="Manzeela, Ferdows"
+first_account.get_accountholder = "Manzeela, Ferdows"
 print(first_account.get_accountholder)
 
 
 
+#Instantiate our savings account
+lisa_account=Savings_Account("Lisa", "Simpson", 300)
 
-lisa_account=Saving_Account("Lisa","Simpson",300)
-print(lisa_account.get_balance())
 
 try:
     lisa_account.withdraw(1000)
