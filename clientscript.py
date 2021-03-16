@@ -5,10 +5,10 @@ from savingsacc import Savings_Account
 first_account=Account("Tasnim", "Begum", 900)
 
 #setters
-first_account.get_accountholder = "Sanele , Mbuthuma"
+first_account.account_holder = "Sanele , Mbuthuma"
 
-first_account.get_accountholder = "Manzeela, Ferdows"
-print(first_account.get_accountholder)
+first_account.account_holder = "Manzeela, Ferdows"
+print(first_account.account_holder)
 
 
 

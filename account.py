@@ -2,11 +2,11 @@ from exception_handling import InsufficientFundsException
 
 class Account:
     numCreated = 0
-    def __init__(self, f_name, l_name, initial_balance):
+    def __init__(self, first_name, last_name, initial_balance):
 
-        self.f_name = f_name
+        self._first_name = first_name
 
-        self.l_name = l_name
+        self._last_name = last_name
 
         self._balance = initial_balance
 
@@ -14,12 +14,12 @@ class Account:
 
 
     @property
-    def get_accountholder(self):
-        return f"First name:{self.fname}\nSurname:{self.lname}"
+    def account_holder(self):
+        return f"First name:{self._first_name}\nSurname:{self._last_name}"
 
-    @get_accountholder.setter
-    def get_accountholder(self,name):
-        self.fname,self.lname= name.split(",")
+    @account_holder.setter
+    def account_holder(self, name):
+        self._first_name, self._last_name= name.split(",")
 
 
     def withdraw(self, withdraw_amount):
